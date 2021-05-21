@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Photo Gallery</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+    <centre>
+        <ul class="menu1">
+            <li class="links"><a href="#home">Home </a></li>
+            <li class="links"><a href="#grid">Grid View </a></li>
+            <li class="links"><a href="#slide">Slide View </a></li>
+        </ul>
+    </centre>
+
+    <section id="home">
+        <h1>Home</h1>
+        <br />
+        <img  id="img1" src="flowers.gif">
+    </section>
+
+    <section id="grid">
+        <h1>Grid View</h1>
+        <br />
+        <div class="row">
+            <img id="img2" src="blue.jpg">
+            <img id="img3" src="Orange.png">
+            <br/>
+            <img id="img4" src="Pink%20tulip.jpg">
+            <img id="img5" src="purple.jpg">
+        </div>
+    </section>
+    
+    <section id="slide">
+        <h1>Slide View</h1>
+        <br/>
+        <!-- Wrapper Slide  -->
+        <div id="myCarousel" class="carousel slide">
+
+            <div class="carousel-inner">
+
+                <div class="item active">
+
+                    <centre>
+                            <img src="Red%20rose.jpg" class="img-responsive">
+
+                        <div class="carousel-content">
+                            <p>Red Roses</p>
+                        </div>
+                    </centre>
+                </div>
+
+                <div class="item">
+
+                    <centre>
+                            <img src="violet.jpg" class="img-responsive">
+
+                        <div class="carousel-content">
+                            <p>Violet</p>
+                        </div>
+                    </centre>
+                </div>
+                
+                <div class="item">
+
+                    <centre>
+                            <img src="White.jpg" class="img-responsive">
+
+                        <div class="carousel-content">
+                            <p>White</p>
+                        </div>
+                    </centre>
+                </div>
+                
+                <div class="item">
+
+                    <centre>
+                            <img src="yellow.jpg" class="img-responsive">
+
+                        <div class="carousel-content">
+                            <p>Yellow</p>
+                        </div>
+                    </centre>
+                </div>
+            </div>
+
+            <!-- Left and Right control -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </section>
+    </div>
+</body>
+
+</html>
